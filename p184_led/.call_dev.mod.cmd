@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/pi_bsp/drivers/p184_led/call_dev.mod := printf '%s\n'   call_dev.o | awk '!x[$$0]++ { print("/home/ubuntu/pi_bsp/drivers/p184_led/"$$0) }' > /home/ubuntu/pi_bsp/drivers/p184_led/call_dev.mod

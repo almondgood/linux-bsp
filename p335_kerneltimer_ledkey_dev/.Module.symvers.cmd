@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/pi_bsp/drivers/p335_kerneltimer_ledkey_dev/Module.symvers :=  sed 's/ko$$/o/'  /home/ubuntu/pi_bsp/drivers/p335_kerneltimer_ledkey_dev/modules.order | scripts/mod/modpost -m -a    -o /home/ubuntu/pi_bsp/drivers/p335_kerneltimer_ledkey_dev/Module.symvers -e -i Module.symvers -T - 

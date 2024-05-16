@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/pi_bsp/drivers/p122_led/led.ko := arm-linux-gnueabihf-ld -r  -EL -z noexecstack   --build-id=sha1  -T scripts/module.lds -o /home/ubuntu/pi_bsp/drivers/p122_led/led.ko /home/ubuntu/pi_bsp/drivers/p122_led/led.o /home/ubuntu/pi_bsp/drivers/p122_led/led.mod.o;  true

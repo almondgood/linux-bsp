@@ -1,0 +1,61 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+%.o	Makefile	/^%.o:%.c$/;"	t
+APP	Makefile	/^APP := ioctl_app$/;"	m
+CC	Makefile	/^CC := arm-linux-gnueabihf-gcc$/;"	m
+CROSS	Makefile	/^CROSS = ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-$/;"	m
+DEVICE_FILENAME	ioctl_app.c	/^#define DEVICE_FILENAME /;"	d	file:
+GPIOKEYCNT	ioctl_dev.c	/^#define GPIOKEYCNT /;"	d	file:
+GPIOLEDCNT	ioctl_dev.c	/^#define GPIOLEDCNT /;"	d	file:
+INCLUDE_VERMAGIC	ioctl_dev.mod.c	/^#define INCLUDE_VERMAGIC$/;"	d	file:
+IOCTLTEST_GETSTATE	ioctl_test.h	/^#define IOCTLTEST_GETSTATE	/;"	d
+IOCTLTEST_KEYLEDFREE	ioctl_test.h	/^#define IOCTLTEST_KEYLEDFREE /;"	d
+IOCTLTEST_KEYLEDINIT	ioctl_test.h	/^#define IOCTLTEST_KEYLEDINIT /;"	d
+IOCTLTEST_LEDOFF	ioctl_test.h	/^#define IOCTLTEST_LEDOFF	/;"	d
+IOCTLTEST_LEDON	ioctl_test.h	/^#define IOCTLTEST_LEDON	/;"	d
+IOCTLTEST_MAGIC	ioctl_test.h	/^#define IOCTLTEST_MAGIC /;"	d
+IOCTLTEST_MAXNR	ioctl_test.h	/^#define IOCTLTEST_MAXNR	/;"	d
+IOCTLTEST_READ	ioctl_test.h	/^#define IOCTLTEST_READ	/;"	d
+IOCTLTEST_WRITE	ioctl_test.h	/^#define IOCTLTEST_WRITE	/;"	d
+IOCTLTEST_WRITE_READ	ioctl_test.h	/^#define IOCTLTEST_WRITE_READ	/;"	d
+KDIR	Makefile	/^KDIR := \/home\/ubuntu\/pi_bsp\/kernel\/linux$/;"	m
+LEDKEY_DEV_MAJOR	ioctl_dev.c	/^#define   LEDKEY_DEV_MAJOR /;"	d	file:
+LEDKEY_DEV_NAME	ioctl_dev.c	/^#define   LEDKEY_DEV_NAME /;"	d	file:
+MOD	Makefile	/^MOD := ioctl_dev$/;"	m
+OBJ	Makefile	/^OBJ := $(APP).o$/;"	m
+OFF	ioctl_dev.c	/^#define OFF /;"	d	file:
+ON	ioctl_dev.c	/^#define ON /;"	d	file:
+PWD	Makefile	/^PWD := $(shell pwd)$/;"	m
+__IOCTL_H__	ioctl_test.h	/^#define __IOCTL_H__$/;"	d
+____versions	ioctl_dev.mod.c	/^static const struct modversion_info ____versions[]$/;"	v	typeref:typename:const struct modversion_info[]__used __section ("")	file:
+__anoneabd6e750108	ioctl_test.h	/^{$/;"	s
+buff	ioctl_test.h	/^	unsigned char buff[128];$/;"	m	struct:__anoneabd6e750108	typeref:typename:unsigned char[128]
+clean	Makefile	/^clean:$/;"	t
+default	Makefile	/^default:$(OBJ)$/;"	t
+gpioKey	ioctl_dev.c	/^int gpioKey[GPIOKEYCNT] = {16,17,18,19,20,21,22,23};$/;"	v	typeref:typename:int[]
+gpioKeyFree	ioctl_dev.c	/^void gpioKeyFree(void) $/;"	f	typeref:typename:void
+gpioKeyGet	ioctl_dev.c	/^int	gpioKeyGet(void) $/;"	f	typeref:typename:int
+gpioKeyInit	ioctl_dev.c	/^int gpioKeyInit(void) $/;"	f	typeref:typename:int
+gpioLed	ioctl_dev.c	/^int gpioLed[GPIOLEDCNT] = {6,7,8,9,10,11,12,13};$/;"	v	typeref:typename:int[]
+gpioLedFree	ioctl_dev.c	/^void gpioLedFree(void)$/;"	f	typeref:typename:void
+gpioLedInit	ioctl_dev.c	/^int	gpioLedInit(void)$/;"	f	typeref:typename:int
+gpioLedSet	ioctl_dev.c	/^void gpioLedSet(long val) $/;"	f	typeref:typename:void
+ioctl_test_info	ioctl_test.h	/^} __attribute__((packed)) ioctl_test_info;$/;"	t	typeref:struct:__anoneabd6e750108
+ledkey_exit	ioctl_dev.c	/^static void ledkey_exit(void)$/;"	f	typeref:typename:void	file:
+ledkey_fops	ioctl_dev.c	/^struct file_operations ledkey_fops =$/;"	v	typeref:struct:file_operations
+ledkey_init	ioctl_dev.c	/^static int ledkey_init(void)$/;"	f	typeref:typename:int	file:
+ledkey_ioctl	ioctl_dev.c	/^static long ledkey_ioctl (struct file *filp, unsigned int cmd, unsigned long arg)$/;"	f	typeref:typename:long	file:
+ledkey_open	ioctl_dev.c	/^static int ledkey_open (struct inode *inode, struct file *filp)$/;"	f	typeref:typename:int	file:
+ledkey_read	ioctl_dev.c	/^static ssize_t ledkey_read(struct file *filp, char *buf, size_t count, loff_t *f_pos)$/;"	f	typeref:typename:ssize_t	file:
+ledkey_release	ioctl_dev.c	/^static int ledkey_release (struct inode *inode, struct file *filp)$/;"	f	typeref:typename:int	file:
+ledkey_write	ioctl_dev.c	/^static ssize_t ledkey_write (struct file *filp, const char *buf, size_t count, loff_t *f_pos)$/;"	f	typeref:typename:ssize_t	file:
+main	ioctl_app.c	/^int main()$/;"	f	typeref:typename:int
+obj-m	Makefile	/^obj-m := $(MOD).o$/;"	m
+onevalue	ioctl_dev.c	/^static int onevalue = 1;$/;"	v	typeref:typename:int	file:
+size	ioctl_test.h	/^	unsigned long size;$/;"	m	struct:__anoneabd6e750108	typeref:typename:unsigned long
+twostring	ioctl_dev.c	/^static char * twostring = NULL;$/;"	v	typeref:typename:char *	file:
