@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/pi_bsp/drivers/p527_ledkey_proc/modules.order := {   echo /home/ubuntu/pi_bsp/drivers/p527_ledkey_proc/p527_ledkey_dev.ko; :; } > /home/ubuntu/pi_bsp/drivers/p527_ledkey_proc/modules.order

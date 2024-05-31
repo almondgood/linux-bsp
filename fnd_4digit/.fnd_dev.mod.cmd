@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/pi_bsp/drivers/fnd_4digit/fnd_dev.mod := printf '%s\n'   fnd_dev.o | awk '!x[$$0]++ { print("/home/ubuntu/pi_bsp/drivers/fnd_4digit/"$$0) }' > /home/ubuntu/pi_bsp/drivers/fnd_4digit/fnd_dev.mod
